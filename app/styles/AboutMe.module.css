@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Keeps text on the left, images on the right */
+    align-items: center; /* Ensures vertical centering */
+    width: 100%;
+    padding: 2rem 1rem;
+    padding-right: 3%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+
+.textSection {
+    width: 70%;
+    max-width: 65%; 
+    text-align: left;
+    gap: 3rem;
+    padding-left: 5%;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2e4c1e;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.text {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    max-width: 100%;
+    color: #5A6A4F;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 30%;
+    max-width: 300px;
+    height: auto; /* Fixed height */
+    justify-items: center;
+    align-items: center; /* Ensures vertical centering */
+    position: absolute; /* Fixes position */
+    right: 5%; /* Ensures it stays on the right side */
+    top: 50%; /* Positions it in the center */
+    transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+}
+
+/* Wrapper for each flipping image */
+.imageContainer {
+    perspective: 1000px; /* Adds depth effect */
+    width: 150px; /* Fixed width */
+    height: 200px; /* Fixed height */
+}
+
+/* Inner container to hold front and back */
+.imageInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Flip on hover */
+.imageContainer:hover .imageInner {
+    transform: rotateY(180deg);
+
+}
+
+/* Front side (image) */
+.imageFront {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #8B5E3B;
+    border-radius: 8px;
+    backface-visibility: hidden; /* Hide back when front is visible */
+}
+
+/* Back side (alt text) */
+.imageBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8B5E3B;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;  /* Centers text vertically */
+    justify-content: center;  /* Centers text horizontally */
+    border-radius: 8px;
+    backface-visibility: hidden;  /* Hides the backside when flipped */
+    transform: rotateY(180deg);  /* Rotates the element 180 degrees for the flip effect */
+}
+
+.flashingStarLeft {
+    font-size: 3rem; /* You can adjust the size of the star */
+    animation: flash 2s ease-in-out infinite; /* The animation runs indefinitely */
+    padding-right: 10px;
+}
+
+.flashingStarRight {
+    font-size: 3rem; /* You can adjust the size of the star */
+    animation: flash 2s ease-in-out infinite; /* The animation runs indefinitely */
+    padding-left: 10px;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1; /* Fully visible at the start */
+    }
+    50% {
+        opacity: 0.2; /* Almost invisible in the middle */
+    }
+    100% {
+        opacity: 1; /* Fully visible again */
+    }
+}

@@ -1,0 +1,5 @@
+.divWithBorder {
+    border-bottom: 3px solid #8B5E3B;
+    box-shadow: 0 4px 8px rgba(139, 94, 59, 0.4); /* Adds a subtle shadow below the line */
+    margin-bottom: 2rem;
+  }

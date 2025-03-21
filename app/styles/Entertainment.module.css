@@ -1,0 +1,180 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Keeps text on the left, images on the right */
+    align-items: center; /* Ensures vertical centering */
+    width: 100%;
+    padding: 2rem 1rem;
+    padding-right: 3%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+
+.textSection {
+    width: 70%;
+    max-width: 65%; 
+    text-align: left;
+    gap: 3rem;
+    padding-left: 5%;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2e4c1e;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'font-serif';
+}
+
+.subheading {
+    font-size: 1.6rem; /* Slightly larger than the text for emphasis */
+    font-weight: 600; /* Same weight for consistency */
+    color: #8B5E3B; /* Same color as the body text */
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize; /* Capitalize each word for clarity */
+}
+
+.text {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    max-width: 100%;
+    color: #5A6A4F;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns on top row */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 5px;
+    width: 30%;
+    max-width: 300px;
+    height: auto; /* Fixed height */
+    justify-items: center;
+    align-items: center; /* Ensures vertical centering */
+    position: absolute; /* Fixes position */
+    right: 5%; /* Ensures it stays on the right side */
+    top: 50%; /* Positions it in the center */
+    transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+}
+
+.imageContainer {
+    perspective: 1000px;
+    width: 150px;
+    height: 200px;
+}
+
+.imageInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.imageFront {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #8B5E3B;
+    border-radius: 8px;
+    backface-visibility: hidden; /* Hide back when front is visible */
+}
+
+.imageBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8B5E3B;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;  /* Centers text vertically */
+    justify-content: center;  /* Centers text horizontally */
+    border-radius: 8px;
+    backface-visibility: hidden;  /* Hides the backside when flipped */
+    transform: rotateY(180deg);
+}
+
+.imageContainer:nth-child(2):hover .imageInner {
+    transform: rotateY(180deg);
+}
+
+.imageContainer:nth-child(3):hover .imageInner {
+    transform: rotateY(180deg);
+}
+
+.imageGrid > .imageContainer:nth-child(1) {
+    grid-column: span 2;
+    width: 300px;
+    height: 200px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #8B5E3B;
+    border-radius: 8px;
+    border: 4px solid #8B5E3B;
+}
+
+.musicNoteLeft {
+    font-size: 3rem; /* Adjust size for a more prominent look */
+    animation: bounce 2s ease-in-out infinite, scaleColor 2s ease-in-out infinite alternate; /* Combining bounce and scale/color change */
+    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+.musicNoteRight {
+    font-size: 3rem; /* Adjust size for a more prominent look */
+    animation: bounce 2s ease-in-out infinite, scaleColor 2s ease-in-out infinite alternate; /* Combining bounce and scale/color change */
+    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.musicNoteLeft {
+    animation-delay: 0s; /* Slight delay for the left note */
+}
+
+.musicNoteRight {
+    animation-delay: 0.5s; /* Slight delay for the right note */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Start at normal position */
+    }
+    50% {
+        transform: translateY(-15px); /* Bounce upwards */
+    }
+    100% {
+        transform: translateY(0); /* Return to starting position */
+    }
+}
+
+@keyframes scaleColor {
+    0% {
+        transform: scale(1); /* Normal size */
+        color: #ff6347; /* Tomato color */
+    }
+    50% {
+        transform: scale(1.2); /* Scale up */
+        color: #32cd32; /* Lime green color */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+        color: #1e90ff; /* Dodger blue color */
+    }
+}
