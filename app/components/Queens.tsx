@@ -4,12 +4,13 @@ export default function Queens() {
     return (
         <div className={styles.container}>
             {/* Text Section */}
-            <div>
             <h2 className={styles.heading}>
                 <span className={styles.pencilAnimationLeft}>✏️</span>
                 University
                 <span className={styles.pencilAnimationRight}>✏️</span>
             </h2>
+            <div className={styles.subcontainer}>
+            
 
                 <div className={styles.textSection}>
                     <div className={styles.subheading}>

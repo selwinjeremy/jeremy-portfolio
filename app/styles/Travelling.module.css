@@ -1,12 +1,18 @@
 .container {
+    align-items: center; /* Ensures vertical centering */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+.subcontainer {
     display: flex;
     justify-content: space-between; /* Keeps text on the left, images on the right */
     align-items: center; /* Ensures vertical centering */
     width: 100%;
-    padding: 2rem 1rem;
     padding-right: 3%;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8);
     position: relative;
 }
 

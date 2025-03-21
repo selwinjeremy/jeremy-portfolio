@@ -4,12 +4,13 @@ export default function Sports() {
     return (
         <div className={styles.container}>
             {/* Text Section */}
-            <div>
-                <h2 className={styles.heading}>
+            <h2 className={styles.heading}>
                 <span className={styles.soccerBallLeft}>🏀</span>
                     Sports
                 <span className={styles.soccerBallRight}>🏀</span>
                 </h2>
+            <div className={styles.subcontainer}>
+
 
                 <div className={styles.textSection}>
                     <div className={styles.subheading}>

@@ -40,8 +40,8 @@ export default function Home() {
   <div className="flex justify-center space-x-30 py-4">
     <a href="#aboutMe" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">About Me</a>
     <a href="#experience" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Experience</a>
-    <a href="#projects" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Side Projects</a>
     <a href="#queens" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">University</a>
+    <a href="#projects" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Side Projects</a>
     <a href="#sports" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Sports</a>
     <a href="#entertainment" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Entertainment</a>
     <a href="#travelling" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Travels</a>
@@ -156,6 +156,25 @@ export default function Home() {
       </section>
       <section
         className="w-full py-8 relative"
+        id="queens"
+        style={{
+          backgroundImage: 'url(/images/brown-mountain-background.png)',
+          backgroundSize: 'cover',   // Ensures the image covers the section
+          backgroundPosition: 'center', // Keeps the image centered
+          backgroundAttachment: 'fixed', // Optional: keeps the image fixed while scrolling
+        }}
+      >
+        <div className="w-full max-w-8xl mx-auto px-8"
+        style={{
+          borderBottom: '5px solid #8B5E3B',
+          borderRadius: '4px',
+          marginBottom: '2rem'
+        }}> {/* Added px-8 for padding */}
+          <Queens />
+        </div>
+      </section>
+      <section
+        className="w-full py-8 relative"
         id="projects"
         style={{
           backgroundImage: 'url(/images/brown-mountain-background.png)',
@@ -172,25 +191,6 @@ export default function Home() {
           marginBottom: '2rem'
         }}> {/* Added px-8 for padding */}
           <Projects />
-        </div>
-      </section>
-      <section
-        className="w-full py-8 relative"
-        id="queens"
-        style={{
-          backgroundImage: 'url(/images/brown-mountain-background.png)',
-          backgroundSize: 'cover',   // Ensures the image covers the section
-          backgroundPosition: 'center', // Keeps the image centered
-          backgroundAttachment: 'fixed', // Optional: keeps the image fixed while scrolling
-        }}
-      >
-        <div className="w-full max-w-8xl mx-auto px-8"
-        style={{
-          borderBottom: '5px solid #8B5E3B',
-          borderRadius: '4px',
-          marginBottom: '2rem'
-        }}> {/* Added px-8 for padding */}
-          <Queens />
         </div>
       </section>
       <section

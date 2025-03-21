@@ -4,12 +4,12 @@ export default function AboutMe() {
     return (
         <div className={styles.container}>
             {/* Text Section */}
-            <div>
-                <h2 className={styles.heading}>
+            <h2 className={styles.heading}>
                     <span className={styles.flashingStarLeft}>⭐</span>
                     About Me
                     <span className={styles.flashingStarRight}>⭐</span>
                 </h2>
+            <div className={styles.subcontainer}>
 
                 <div className={styles.textSection}>
                     <p className={styles.text}>

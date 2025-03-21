@@ -4,14 +4,14 @@ export default function Entertainment() {
     return (
         <div className={styles.container}>
             {/* Text Section */}
-            <div>
-                <h2 className={styles.heading}>
+            <h2 className={styles.heading}>
                     <span className={styles.musicNoteLeft}>🎵</span>
                     <span className={styles.musicNoteLeft}>🎶</span>
                     Music and Entertainment
                     <span className={styles.musicNoteRight}>🎶</span>
                     <span className={styles.musicNoteRight}>🎵</span>
                 </h2>
+            <div className={styles.subcontainer}>
 
                 <div className={styles.textSection}>
                     <div className={styles.subheading}>

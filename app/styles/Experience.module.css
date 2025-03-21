@@ -1,19 +1,25 @@
 .container {
+    align-items: center; /* Ensures vertical centering */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+.subcontainer {
     display: flex;
     justify-content: space-between; /* Keeps text on the left, images on the right */
     align-items: center; /* Ensures vertical centering */
     width: 100%;
-    padding: 2rem 1rem;
     padding-right: 3%;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8);
     position: relative;
 }
 
-
 .textSection {
-    width: 70%;
-    max-width: 65%; 
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%; 
     text-align: left;
     gap: 3rem;
     padding-left: 5%;
@@ -21,12 +27,14 @@
 
 .heading {
     font-size: 2.5rem;
+    width: 100%;
     font-weight: 600;
     color: #2e4c1e;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-align: center;
     padding-bottom: 20px;
+    justify-content: center;
     font-family: 'font-serif';
 }
 
@@ -49,12 +57,29 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.experienceList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling each list item */
+.experienceItem {
+    margin-bottom: 20px;
+}
+
+.positionList {
+    list-style-type: disc; /* Adds bullet points to positions */
+    padding-left: 20px; /* Indentation to create space for the bullet points */
+    margin: 0;
+}
+
 .imageGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns on top row */
     grid-template-rows: auto auto; /* Two rows */
     gap: 5px;
-    width: 30%;
+    width: 20%;
     max-width: 300px;
     height: auto; /* Fixed height */
     justify-items: center;
@@ -158,10 +183,11 @@
 }
 
 .logoContainer {
-    width: 100%; /* Full width container */
-    overflow: hidden; /* Hide overflow so only the visible part of the logos is shown */
+    width: 100%;
+     /* Full width container */
     position: relative; /* Required for positioning child elements */
     padding-left: 5%;
+    z-index: 1;
 }
 
 .logoWrapper {
@@ -173,4 +199,5 @@
     width: 50px; /* Adjust the size of the logos */
     height: 50px; /* Maintain aspect ratio */
     margin-right: 20px; /* Spacing between logos */
+    z-index: 1;
 }

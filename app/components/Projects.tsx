@@ -3,9 +3,10 @@ import styles from "../styles/Projects.module.css";
 export default function Projects() {
     return (
         <div className={styles.container}>
+            <div className={styles.heading}>💻 Side Projects 💻</div>
+            
             {/* Text Section */}
-            <div>
-                <div className={styles.heading}>💻 Side Projects 💻</div>
+            <div className={styles.subcontainer}>
                 <div className={styles.videoGrid}>
                     <div className={styles.videoContainer}>
                         <div className={`${styles.subheading} ${styles.typingText}`}>🤖 Campus Companion 🤖</div>
