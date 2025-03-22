@@ -86,7 +86,7 @@
     align-items: center; /* Ensures vertical centering */
     position: absolute; /* Fixes position */
     right: 5%; /* Ensures it stays on the right side */
-    top: 50%; /* Positions it in the center */
+    top: 40%; /* Positions it in the center */
     transform: translateY(-50%); /* Adjusts for perfect vertical centering */
 }
 
