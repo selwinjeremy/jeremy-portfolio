@@ -81,7 +81,7 @@ export default function Home() {
         {/* Circular Photos Inline */}
         <div className="flex flex-row space-x-10 items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg">
-            <Image src="/images/mirror-selfie.png" alt="Mirror Selfie" width={256} height={256} className="object-cover" />
+            <Image src="/images/italy-beach.png" alt="Mirror Selfie" width={256} height={256} className="object-cover" />
           </div>
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg">
             <Image src="/images/nyc-winter.png" alt="NYC Winter" width={256} height={256} className="object-cover" />
