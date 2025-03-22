@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* Welcome Text */}
         <div className="text-center mb-16">
-          Hello, I'm Jeremy Selwin！
+          Hello, I'm Jeremy！
         </div>
 
         {/* Circular Photos Inline */}
