@@ -20,7 +20,7 @@ export default function AboutMe() {
                     <p className={styles.text}>
                     Outside of work, I stay active with soccer, basketball, running, swimming, and walks with my dog, Benji. 
                     I also love playing music, like the piano and drums. 
-                    Traveling across North America, Europe, and East Asia has given me a deeper appreciation for different cultures.
+                    Traveling across North America, and Europe has also given me a deeper appreciation for different cultures.
                     </p>
 
                     <p className={styles.text}>

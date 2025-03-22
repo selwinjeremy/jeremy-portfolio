@@ -15,13 +15,17 @@ export default function Experience() {
 
                 <div className={styles.textSection}>
                     <ul className={styles.experienceList}>
+
                         <li className={styles.experienceItem}>
                             <div className={styles.subheading}>
-                                Government of Ontario
+                                National Bank Financial Markets
                             </div>
                             <ul className={styles.positionList}>
                                 <li className={styles.text}>
-                                    IT Systems Assistant (2021 - 2021)
+                                    Financial Analyst (2025 - Current)
+                                </li>
+                                <li className={styles.text}>
+                                    Full Stack Developer Intern (2024 - 2025)
                                 </li>
                             </ul>
                         </li>
@@ -32,24 +36,21 @@ export default function Experience() {
                             </div>
                             <ul className={styles.positionList}>
                                 <li className={styles.text}>
-                                    Customer Success Intern (2021 - 2022)
+                                    Software Engineer Intern (2022 - 2024)
                                 </li>
                                 <li className={styles.text}>
-                                    Software Engineer Intern (2022 - 2024)
+                                    Customer Success Intern (2021 - 2022)
                                 </li>
                             </ul>
                         </li>
 
                         <li className={styles.experienceItem}>
                             <div className={styles.subheading}>
-                                National Bank Financial Markets
+                                Government of Ontario
                             </div>
                             <ul className={styles.positionList}>
                                 <li className={styles.text}>
-                                    Full Stack Developer Intern (2024 - 2025)
-                                </li>
-                                <li className={styles.text}>
-                                    Financial Analyst (2025 - Current)
+                                    IT Systems Assistant (2021 - 2021)
                                 </li>
                             </ul>
                         </li>

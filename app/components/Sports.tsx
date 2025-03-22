@@ -25,14 +25,14 @@ export default function Sports() {
                     🏃‍♂️ Marathon Running
                     </div>
                     <p className={styles.text}>
-                    I recently ran the 42 km Toronto Waterfront Marathon after six months of training—an incredible achievement I never thought possible.
+                    I recently ran the 42 km Toronto Waterfront Marathon after six months of training, which was an incredible achievement I never thought I'd be able to do at 22 years old.
                     </p>
 
                     <div className={styles.subheading}>
                     🏊‍♂️ Swimming
                     </div>
                     <p className={styles.text}>
-                    I used to be a lifeguard, a journey that took 13 years from my first swim class to earning my National Lifeguard License. 
+                    I used to be a lifeguard, which was a journey that took 13 years from my first swim class to earning my National Lifeguard License. 
                     Now, I swim recreationally.
                     </p>
                 </div>

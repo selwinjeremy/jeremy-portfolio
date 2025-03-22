@@ -19,23 +19,23 @@ export default function Entertainment() {
                     </div>
                     <p className={styles.text}>
                     I grew up playing piano and later switched to drums. 
-                    Watch me drop my sticks mid-performance in the video — RIP.
+                    You can watch me drop my sticks mid-performance in the video... RIP.
                     </p>
 
                     <div className={styles.subheading}>
                     🎤 Music
                     </div>
                     <p className={styles.text}>
-                    I spend way too much time on Spotify, constantly discovering music and updating playlists. I love Hip-Hop and Alternative, 
-                    with favorites like Travis Scott, Drake, Don Toliver, The Wallows, and SZA.
+                    I spend way too much time on Spotify, constantly discovering music and updating playlists. I love Hip-Hop and Alternative music, 
+                    with favorite artists like Travis Scott, Drake, Don Toliver, The Wallows, and SZA.
                     </p>
 
                     <div className={styles.subheading}>
                     📺 Entertainment
                     </div>
                     <p className={styles.text}>
-                    I’m a big fan of animated shows like Naruto, Pokémon, and Family Guy. 
-                    I also watch Sidemen daily—been a fan since I was 13!
+                    I’m also a big fan of animated shows like Naruto, Pokémon, and Family Guy. 
+                    I also watch Sidemen daily as I've been a fan since I was 13 years old!
                     </p>
                 </div>
             </div>

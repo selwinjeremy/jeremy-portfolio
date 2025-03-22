@@ -15,14 +15,14 @@ export default function Travelling() {
                     </div>
                     <p className={styles.text}>
                     My favorite trip was to Italy with my soccer teammates! 
-                    We explored Rome, Napoli, Florence, Pompeii, and the Amalfi Coast—all while enjoying incredible food.
+                    We explored Rome, Napoli, Florence, Pompeii, and the Amalfi Coast, all while enjoying some amazing pasta, pizza, and tiramisu.
                     </p>
 
                     <div className={styles.subheading}>
                     🚢 Carribean Cruise
                     </div>
                     <p className={styles.text}>
-                    A cruise with my high school friends to Mexico and Honduras was my first trip without family, and it definitely sparked my love for travel.
+                    A cruise with my high school friends to Mexico and Honduras was my first trip without family, and it definitely sparked my love for travelling.
                     </p>
 
                     <div className={styles.subheading}>
