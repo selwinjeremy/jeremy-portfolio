@@ -104,7 +104,7 @@ export default function Home() {
           <a href="https://github.com/selwinjeremy" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
             <Image src="/images/logos/github.png" alt="Github" width={100} height={100} className="object-cover" />
           </a>
-          <a href="https://drive.google.com/file/d/1Kn-qKJHxAlWfbmuN1st3blvoh4fcNMl6/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
+          <a href="https://drive.google.com/file/d/1Ryv4Vi-NMCEByVJxIDDdsobBFROJY1ca/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
             <Image src="/images/logos/resume.png" alt="Resume" width={100} height={100} className="object-cover" />
           </a>
         </div>
