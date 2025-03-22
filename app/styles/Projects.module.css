@@ -94,9 +94,11 @@
     overflow: hidden;
     border-right: 2px solid #2e4c1e;
     white-space: nowrap;
-    animation: typing 5s steps(30) 1.5s forwards, blink step-end infinite;
+    animation: typing 5s steps(30) 1.5s forwards, blink 1s step-end infinite;
     animation-iteration-count: infinite;
-  }
+    text-align: center;
+    max-width: fit-content;
+}
   
 @keyframes blink {
     0% {
@@ -119,11 +121,3 @@
     }
 }
 
-@keyframes pause {
-    0% {
-      width: 100%;
-    }
-    100% {
-      width: 100%;
-    }
-}

@@ -63,14 +63,15 @@ export default function Experience() {
                         <img className={styles.logo} src="/images/logos/java.svg" alt="Java" />
                         <img className={styles.logo} src="/images/logos/html.svg" alt="HTML" />
                         <img className={styles.logo} src="/images/logos/css.svg" alt="CSS" />
+                        <img className={styles.logo} src="/images/logos/react.svg" alt="React" />
+                        <img className={styles.logo} src="/images/logos/streamlit.svg" alt="Streamlit" />
+                        <img className={styles.logo} src="/images/logos/node-js.svg" alt="Node" />
                         <img className={styles.logo} src="/images/logos/mongo.svg" alt="Mongo DB" />
                         <img className={styles.logo} src="/images/logos/sql.svg" alt="SQL" />
                         <img className={styles.logo} src="/images/logos/aws.svg" alt="AWS" />
                         <img className={styles.logo} src="/images/logos/gcp.svg" alt="GCP" />
                         <img className={styles.logo} src="/images/logos/docker.svg" alt="Docker" />
                         <img className={styles.logo} src="/images/logos/github.svg" alt="Github" />
-                        <img className={styles.logo} src="/images/logos/react.svg" alt="React" />
-                        <img className={styles.logo} src="/images/logos/streamlit.svg" alt="Streamlit" />
                         <img className={styles.logo} src="/images/logos/postman.svg" alt="Postman" />
                     </div>
                 </div>

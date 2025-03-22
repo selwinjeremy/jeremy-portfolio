@@ -17,25 +17,23 @@ export default function Sports() {
                     ⚽ Soccer
                     </div>
                     <p className={styles.text}>
-                        The sport that I am best at is soccer. I grew up playing competitively for the City of Markham, and
-                        my main position is as a Striker. I'm also a die hard fan of Arsenal FC, based in London, England, 
-                        and my favourite player is Bukayo Saka.
+                    I grew up playing competitive soccer for the City of Markham as a Striker. 
+                    I'm also a die-hard Arsenal FC fan, and my favorite player is Bukayo Saka.
                     </p>
 
                     <div className={styles.subheading}>
                     🏃‍♂️ Marathon Running
                     </div>
                     <p className={styles.text}>
-                        An achievement that happened to me recently is that I ran the full Toronto Waterfront Marathon, which was 42 Kilometres!
-                        This was an amazing moment for me as I spent half a year training, and couldn't believe that I was able to run such a far distance.
+                    I recently ran the 42 km Toronto Waterfront Marathon after six months of training—an incredible achievement I never thought possible.
                     </p>
 
                     <div className={styles.subheading}>
                     🏊‍♂️ Swimming
                     </div>
                     <p className={styles.text}>
-                        Another sport that I like to take part in is swimming. Although I only do it recreationally now, I used to be a lifeguard which
-                        took over 13 years to accomplishing from passing my first swimming class to getting my National Lifeguard Liscence.
+                    I used to be a lifeguard, a journey that took 13 years from my first swim class to earning my National Lifeguard License. 
+                    Now, I swim recreationally.
                     </p>
                 </div>
             </div>

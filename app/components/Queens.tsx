@@ -17,24 +17,24 @@ export default function Queens() {
                     👑 QHacks
                     </div>
                     <p className={styles.text}>
-                        I've been a part of QHacks throughout my whole time at Queen's, where I've had the roles of a First Year Rep, Head of Sponsorships, President, and Advisor.
-                        I truly believe that my involvement in the club made me the professional that I am today, and helped me foster many long lasting relationships.
+                    I was involved in QHacks throughout my time at Queen’s, serving as First Year Rep, Head of Sponsorships, President, and Advisor. 
+                    It shaped my professional growth and built lasting relationships.
                     </p>
 
                     <div className={styles.subheading}>
                     🔬 Research
                     </div>
                     <p className={styles.text}>
-                        From September 2023 to September 2024, I was a part of the Modelling and Analysis in Software Engineering group, where I focused on 
-                        using Generative AI to automate YANG model template generation for Telus network configurations.
+                    From Sept 2023 to Sept 2024, I worked with the Modelling and Analysis in Software Engineering group, using Generative AI 
+                    to automate YANG model template generation for Telus network configurations.
                     </p>
 
                     <div className={styles.subheading}>
                     👨‍🏫 Teaching
                     </div>
                     <p className={styles.text}>
-                        I spent over 2 years as a Teaching Assistant at Queen's, where I taught a variety of courses such as Algorithms, Data Analytics, Software Specifications, 
-                        Object-Oriented Computing, and Intro to Python Programming.
+                    As a TA for over two years, I taught courses in 
+                    Algorithms, Data Analytics, Software Specifications, Object-Oriented Computing, and Python.
                     </p>
                 </div>
             </div>

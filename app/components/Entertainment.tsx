@@ -18,24 +18,24 @@ export default function Entertainment() {
                     🎹 Instruments
                     </div>
                     <p className={styles.text}>
-                        Instruments played a big part of my childhood, where I grew up playing the piano and transitioned to drums at an older age.
-                        You can see my epic fail on the video to the right, where I dropped my sticks half way through a performance RIP.
+                    I grew up playing piano and later switched to drums. 
+                    Watch me drop my sticks mid-performance in the video — RIP.
                     </p>
 
                     <div className={styles.subheading}>
                     🎤 Music
                     </div>
                     <p className={styles.text}>
-                        I spend an unhealthy time on Spotify, trying to find new music, make more playlists, and change the theme of my account. I'm a huge 
-                        fan of Hip-Hop and Alternative music, and my favourite artists are Travis Scott, Drake, Don Toliver, The Wallows, and SZA
+                    I spend way too much time on Spotify, constantly discovering music and updating playlists. I love Hip-Hop and Alternative, 
+                    with favorites like Travis Scott, Drake, Don Toliver, The Wallows, and SZA.
                     </p>
 
                     <div className={styles.subheading}>
                     📺 Entertainment
                     </div>
                     <p className={styles.text}>
-                        I'm a big fan of animated television, such as Naruto, Pokemon, and Family Guy, as these shows never fail to make me smile and laugh.
-                        Another thing I really enjoy watching is Youtube, where I'm a huge fan of the Sidemen, who I have been watch daily since I was 13 years old.
+                    I’m a big fan of animated shows like Naruto, Pokémon, and Family Guy. 
+                    I also watch Sidemen daily—been a fan since I was 13!
                     </p>
                 </div>
             </div>

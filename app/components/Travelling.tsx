@@ -11,27 +11,25 @@ export default function Travelling() {
 
                 <div className={styles.textSection}>
                     <div className={styles.subheading}>
-                    🇮🇹 Italy
+                    🍕 Italy
                     </div>
                     <p className={styles.text}>
-                        The best vacation I've ever been on has to be my trip to Italy. I went with my soccer teammates
-                        for a bit over a week and enjoyed the amazing food while seeing places like Rome, Napoli, Florence, Pompeii, and the Almafi Coast.
+                    My favorite trip was to Italy with my soccer teammates! 
+                    We explored Rome, Napoli, Florence, Pompeii, and the Amalfi Coast—all while enjoying incredible food.
                     </p>
 
                     <div className={styles.subheading}>
                     🚢 Carribean Cruise
                     </div>
                     <p className={styles.text}>
-                        Another very memorable trip was a cruise vacation with my high school friends to Mexico and Honduras. This was my first ever time travelling
-                        with people other than my family, and it definitely ignited my passion for going on more trips.
+                    A cruise with my high school friends to Mexico and Honduras was my first trip without family, and it definitely sparked my love for travel.
                     </p>
 
                     <div className={styles.subheading}>
                     🦅 United States of America
                     </div>
                     <p className={styles.text}>
-                        I've found myself going to the United States really often for the warmer weather or really fun activities.
-                        Growing up, I used to go to the south very often, specifically Myrtle Beach and Florida, but now I find myself in New York regularly.
+                    I visit the U.S. often for the warm weather and fun activities. As a kid, I went to Myrtle Beach and Florida a lot, but now I frequently visit New York State.
                     </p>
 
                 </div>

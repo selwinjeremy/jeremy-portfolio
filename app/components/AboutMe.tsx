@@ -13,28 +13,23 @@ export default function AboutMe() {
 
                 <div className={styles.textSection}>
                     <p className={styles.text}>
-                        I'm Jeremy Selwin, a software developer with a Computer Science degree from Queen's University.
-                        Currently based in Toronto, I work as an Analyst at National Bank Financial Markets, where I
-                        blend my coding skills with my interest in finance.
+                    I'm Jeremy Selwin, a software developer with a CS degree from Queen’s University. I live in Toronto 
+                    and work as an Analyst at National Bank Financial Markets, where I blend my passion for coding with finance.
                     </p>
 
                     <p className={styles.text}>
-                        Outside of work, I stay active through soccer, basketball, running, swimming, and walking my dog, Benji.
-                        I also enjoy playing music—piano, drums, and ukulele.
+                    Outside of work, I stay active with soccer, basketball, running, swimming, and walks with my dog, Benji. 
+                    I also love playing music, like the piano and drums. 
+                    Traveling across North America, Europe, and East Asia has given me a deeper appreciation for different cultures.
                     </p>
 
                     <p className={styles.text}>
-                        I'm passionate about traveling, having explored North America, Europe, and East Asia, which has
-                        broadened my perspective on different cultures.
+                    During my time at Queen’s, I led QHacks, the university’s largest student-run hackathon, 
+                    and worked as a research and teaching assistant, gaining valuable leadership and academic experience.
                     </p>
 
                     <p className={styles.text}>
-                        At Queen's, I led QHacks, the largest student-run hackathon, and gained valuable leadership experience.
-                        I also worked as a research and teaching assistant, learning from both academic and industry perspectives.
-                    </p>
-
-                    <p className={styles.text}>
-                        As you keep scrolling, you'll learn more about my passions for sports, music, travel, and side projects. Enjoy the journey through my story!
+                    Keep scrolling to explore my passions—sports, music, travel, and side projects!
                     </p>
                 </div>
             </div>
