@@ -36,17 +36,17 @@ export default function Home() {
   return (
     <>
       <main className="relative flex flex-col items-center justify-center bg-[#EDE0D4] text-[#3B452D] text-5xl font-bold font-serif min-h-screen">
-      <nav className="fixed top-0 w-full bg-[#EDE0D4] z-10 shadow-md">
-  <div className="flex justify-center space-x-30 py-4">
-    <a href="#aboutMe" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">About Me</a>
-    <a href="#experience" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Experience</a>
-    <a href="#queens" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">University</a>
-    <a href="#projects" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Side Projects</a>
-    <a href="#sports" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Sports</a>
-    <a href="#entertainment" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Entertainment</a>
-    <a href="#travelling" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Travels</a>
-  </div>
-</nav>
+        <nav className="fixed top-0 w-full bg-[#EDE0D4] z-10 shadow-md">
+          <div className="flex justify-center space-x-30 py-4">
+            <a href="#aboutMe" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">About Me</a>
+            <a href="#experience" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Experience</a>
+            <a href="#queens" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">University</a>
+            <a href="#projects" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Side Projects</a>
+            <a href="#sports" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Sports</a>
+            <a href="#entertainment" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Entertainment</a>
+            <a href="#travelling" className="text-[#3B452D] text-lg hover:text-[#9A6D38] hover:underline hover:underline-offset-4">Travels</a>
+          </div>
+        </nav>
         {/* Wooden Texture Overlay */}
         <div
           className="absolute w-full h-full opacity-10"
@@ -80,18 +80,25 @@ export default function Home() {
 
         {/* Circular Photos Inline */}
         <div className="flex flex-row space-x-10 items-center">
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg">
-            <Image src="/images/italy-beach.png" alt="Mirror Selfie" width={256} height={256} className="object-cover" />
-          </div>
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg">
-            <Image src="/images/nyc-winter.png" alt="NYC Winter" width={256} height={256} className="object-cover" />
-          </div>
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg">
-            <Image src="/images/cottage-with-steven.png" alt="Cottage with Steven" width={256} height={256} className="object-cover" />
-          </div>
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg">
-            <Image src="/images/rock-dunder.png" alt="Rock Duner" width={256} height={256} className="object-cover" />
-          </div>
+          {[
+            { src: "/images/italy-beach.png", alt: "Mirror Selfie" },
+            { src: "/images/nyc-winter.png", alt: "NYC Winter" },
+            { src: "/images/cottage-with-steven.png", alt: "Cottage with Steven" },
+            { src: "/images/rock-dunder.png", alt: "Rock Duner" },
+          ].map((image, index) => (
+            <div
+              key={index}
+              className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#9A6D38] shadow-lg transform transition-transform duration-300 origin-center hover:scale-125 hover:shadow-2xl hover:brightness-110"
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={256}
+                height={256}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          ))}
         </div>
 
         <div
@@ -144,13 +151,13 @@ export default function Home() {
           backgroundAttachment: 'fixed', // Optional: keeps the image fixed while scrolling
         }}
       >
-        <div 
+        <div
           className="w-full max-w-8xl mx-auto px-8"
           style={{
-          borderBottom: '5px solid #8B5E3B',
-          borderRadius: '4px',
-          marginBottom: '2rem'
-        }}> {/* Added px-8 for padding */}
+            borderBottom: '5px solid #8B5E3B',
+            borderRadius: '4px',
+            marginBottom: '2rem'
+          }}> {/* Added px-8 for padding */}
           <Experience />
         </div>
       </section>
@@ -165,11 +172,11 @@ export default function Home() {
         }}
       >
         <div className="w-full max-w-8xl mx-auto px-8"
-        style={{
-          borderBottom: '5px solid #8B5E3B',
-          borderRadius: '4px',
-          marginBottom: '2rem'
-        }}> {/* Added px-8 for padding */}
+          style={{
+            borderBottom: '5px solid #8B5E3B',
+            borderRadius: '4px',
+            marginBottom: '2rem'
+          }}> {/* Added px-8 for padding */}
           <Queens />
         </div>
       </section>
@@ -183,13 +190,13 @@ export default function Home() {
           backgroundAttachment: 'fixed', // Optional: keeps the image fixed while scrolling
         }}
       >
-        <div 
-        className="w-full max-w-8xl mx-auto px-8"
-        style={{
-          borderBottom: '5px solid #8B5E3B',
-          borderRadius: '4px',
-          marginBottom: '2rem'
-        }}> {/* Added px-8 for padding */}
+        <div
+          className="w-full max-w-8xl mx-auto px-8"
+          style={{
+            borderBottom: '5px solid #8B5E3B',
+            borderRadius: '4px',
+            marginBottom: '2rem'
+          }}> {/* Added px-8 for padding */}
           <Projects />
         </div>
       </section>
