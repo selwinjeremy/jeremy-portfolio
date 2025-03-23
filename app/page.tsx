@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import AboutMe from './components/AboutMe';
 import Entertainment from './components/Entertainment';
@@ -8,29 +9,46 @@ import Queens from './components/Queens';
 import Sports from './components/Sports';
 import Travelling from './components/Travelling';
 import Experience from "./components/Experience";
-import styles from './styles/HomePage.module.css'
+import styles from "./styles/HomePage.module.css";
 
 type Leaf = {
   id: number;
   left: string;
   delay: string;
   duration: string;
+  type: string;
 };
 
 export default function Home() {
   const [leaves, setLeaves] = useState<Leaf[]>([]);
+  const [leafPile, setLeafPile] = useState<Leaf[]>([]);
+
   useEffect(() => {
     // This will run on the client side after the component mounts
     document.documentElement.style.scrollBehavior = 'smooth';
   }, []);
+
+
   useEffect(() => {
-    const generatedLeaves: Leaf[] = Array.from({ length: 5 }, (_, i) => ({
+    const generatedLeaves: Leaf[] = Array.from({ length: 25 }, (_, i) => ({
       id: i,
       left: Math.random() * 100 + "%",
       delay: Math.random() * 3 + "s",
       duration: Math.random() * 10 + 5 + "s",
+      type: Math.random() > 0.5 ? '🍂' : '🍁',
     }));
     setLeaves(generatedLeaves);
+  }, []);
+
+  useEffect(() => {
+    const generatedLeaves: Leaf[] = Array.from({ length: 1000 }, (_, i) => ({
+      id: i,
+      left: Math.random() * 100 + "%",
+      delay: Math.random() * 3 + "s",
+      duration: Math.random() * 10 + 5 + "s",
+      type: Math.random() > 0.5 ? '🍂' : '🍁',
+    }));
+    setLeafPile(generatedLeaves);
   }, []);
 
   return (
@@ -49,9 +67,9 @@ export default function Home() {
         </nav>
         {/* Wooden Texture Overlay */}
         <div
-          className="absolute w-full h-full opacity-10"
+          className={styles.wallpaperPicture}
           style={{
-            backgroundImage: "url('/images/brown-white-background.jpg')",
+            backgroundImage: "url('/images/new-brown-white-background.png')",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -62,21 +80,25 @@ export default function Home() {
         {leaves.map((leaf) => (
           <div
             key={leaf.id}
-            className="absolute text-[#9A6D38] text-7xl"
+            className={styles.leaf}
             style={{
               left: leaf.left,
-              top: "-10%",
               animation: `fall ${leaf.duration} linear ${leaf.delay} infinite`,
             }}
           >
-            🍂
+            {leaf.type}
           </div>
         ))}
 
         {/* Welcome Text */}
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          style={{ textAlign: 'center', marginBottom: '25px', zIndex: 1 }}
+        >
           Hello, I'm Jeremy！
-        </div>
+        </motion.div>
 
         {/* Circular Photos Inline */}
         <div className="flex flex-row space-x-10 items-center">
@@ -105,15 +127,31 @@ export default function Home() {
           className="flex flex-row space-x-30 items-center"
           style={{ paddingTop: '50px' }}
         >
-          <a href="https://www.linkedin.com/in/jeremy-selwin" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
+          <a href="https://www.linkedin.com/in/jeremy-selwin" className="hover:scale-125 hover:shadow-3xl hover:brightness-110" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
             <Image src="/images/logos/linkedIn.png" alt="LinkedIn" width={100} height={100} className="object-cover" />
           </a>
-          <a href="https://github.com/selwinjeremy" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
+          <a href="https://github.com/selwinjeremy" className="hover:scale-125 hover:shadow-3xl hover:brightness-110" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
             <Image src="/images/logos/github.png" alt="Github" width={100} height={100} className="object-cover" />
           </a>
-          <a href="https://drive.google.com/file/d/1Ryv4Vi-NMCEByVJxIDDdsobBFROJY1ca/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
+          <a href="https://drive.google.com/file/d/1Ryv4Vi-NMCEByVJxIDDdsobBFROJY1ca/view?usp=sharing" className="hover:scale-125 hover:shadow-3xl hover:brightness-110" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', zIndex: 1 }}>
             <Image src="/images/logos/resume.png" alt="Resume" width={100} height={100} className="object-cover" />
           </a>
+        </div>
+
+        <div className={styles.pile}>
+          {leafPile.map((leaf, index) => (
+            <div
+              key={leaf.id + "-pile"}
+              className={styles.pileLeaf}
+              style={{
+                left: `${Math.random() * 100}%`, // Randomize position across the width
+                bottom: `${Math.random() * 30 + 5}%`, // Randomize bottom position for pile
+                zIndex: index, // Add stacking order to make leaves appear in layers
+              }}
+            >
+              {leaf.type}
+            </div>
+          ))}
         </div>
 
       </main>
