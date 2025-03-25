@@ -10,13 +10,10 @@ export default function Projects() {
                 <div className={styles.videoGrid}>
                     <div className={styles.videoContainer}>
                         <div className={`${styles.subheading} ${styles.typingText}`}>🤖 Campus Companion 🤖</div>
-                        <iframe
-                            className={styles.video}
-                            src="https://www.youtube.com/embed/9rOlfyppjJA?si=rlt8tSvbwPnGjHIe"
-                            title="CaCo"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                        <video className={styles.video} controls>
+                            <source src="/images/caco.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                         <p className={styles.text}>All-in-one Texting Assistant for Queen's University</p>
                     </div>
 
